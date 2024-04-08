@@ -17,6 +17,11 @@
                             <a class="nav-link" href="{{ route('admin.projects.index') }}">Projects</a>
                         </li>
                     @endauth
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.types.index') }}">Types</a>
+                        </li>
+                    @endauth
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     @guest

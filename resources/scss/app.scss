@@ -10,16 +10,14 @@
     }
 }
 
-#index-projects{
-    .btn-trash{
-        background: none;
-        border: none;
-        padding: 0;
-    }
-}
-
 .link-index-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.btn-trash{
+    background: none;
+    border: none;
+    padding: 0;
 }
