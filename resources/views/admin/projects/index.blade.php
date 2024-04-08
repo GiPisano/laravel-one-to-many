@@ -11,6 +11,7 @@
                     <th>ID</th>
                     <th>Title</th>
                     {{-- <th>Description</th> --}}
+                    <th>Type</th>
                     <th>Author</th>
                     <th class="d-flex justify-content-center">
                         <a href="{{ route('admin.projects.create') }}" class="btn btn-primary">
@@ -23,7 +24,7 @@
                         <tr>
                             <td>{{ $project->id }}</td>
                             <td>{{ $project->title }}</td>
-                            {{-- <td>{{ $project->description }}</td> --}}
+                            <td>{!! $project->type->getBadge() !!}</td>
                             <td>{{ $project->author }}</td>
                             <td>
                                 <div class="link-index-list">

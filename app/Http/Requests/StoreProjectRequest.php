@@ -27,6 +27,7 @@ class StoreProjectRequest extends FormRequest
             'title' => 'required|string|max:100',
             'author' => 'required|string|max:50',
             'description' => 'required|string|max:1000',
+            'type_id' => 'required|exists:types,id'
         ];
     }
 
@@ -49,6 +50,9 @@ class StoreProjectRequest extends FormRequest
             'description.required' => 'The description is required',
             'description.string' => 'The description must be a text',
             'description.max' => 'The description must be :max characters',
+
+            'type_id.required' => 'The type is required',
+            'type_id.exists' => 'the type must be selected from the proposed options!',
         ];
     }
 }
